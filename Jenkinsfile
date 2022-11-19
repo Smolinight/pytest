@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Check') {
             steps {
-                sh "ls -la; ip a"
+                sh "ls -la; ip a; cat /etc/hostname"
             }
         }
     }
